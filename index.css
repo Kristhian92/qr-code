@@ -1,3 +1,19 @@
+*,
+*:after,
+*:before {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   text-decoration: none;
+}
+
+body {
+   font-size: 100%;
+   list-style-type: none;
+}
+
+
+
 body {
    background-color: hsl(212, 45%, 89%);
    font-size: 15px;
@@ -11,13 +27,29 @@ body {
 
 .container {
 
-   background-color: hsl(0, 0%, 100%);
-   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.1);
-   border-radius: 0.625rem;
-   max-width: 17rem;
-   padding: 1rem;
-   margin-bottom: 1rem;
+   min-height: 100vh;
+   display: flex;
+   align-items: center;
+   justify-content: center;
 
+}
+
+.card {
+   max-width: 20rem;
+   background-color: hsl(0, 0%, 100%);
+   border-radius: 0.938rem;
+   text-align: center;
+}
+
+.card-image {
+   width: 90%;
+   border-radius: 0.625rem;
+   margin: 5%;
+ }
+
+.card-description {
+   margin: 5% 5% 12%;
+   padding: 0 5%;
 }
 
 img {
@@ -49,6 +81,7 @@ p {
 .footerInfo {
    font-size: 11px;
    text-align: center;
+   padding-bottom: 5%;
 }
 
 .footerInfo a {
